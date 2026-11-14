@@ -5,4 +5,4 @@ import * as path from "node:path";
 const outputDirectory = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const destinationPath = path.join(outputDirectory, "entry.png");
 fs.mkdirSync(path.dirname(destinationPath), { recursive: true });
-fs.copyFileSync(new URL("./entry.png", import.meta.url), destinationPath);
+fs.copyFileSync(new URL("./entry.jpg", import.meta.url), destinationPath);
